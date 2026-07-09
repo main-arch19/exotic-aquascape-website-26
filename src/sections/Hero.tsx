@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from "motion/react";
-import { ArrowRight, ChevronDown, ShieldCheck, MapPin, CalendarCheck } from "lucide-react";
+import { ArrowRight, ChevronDown, ShieldCheck, MapPin, CalendarCheck, ShoppingBag } from "lucide-react";
 import { BRAND } from "../data";
 import { useMousePosition } from "../hooks";
 import Button from "../components/ui/Button";
@@ -59,7 +59,7 @@ export default function Hero() {
 
       {/* Parallax light orb */}
       <div
-        className="pointer-events-none absolute left-1/2 top-1/4 h-[42rem] w-[42rem] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
+        className="pointer-events-none absolute left-1/2 top-1/4 h-64 w-64 sm:h-96 sm:w-96 lg:h-[42rem] lg:w-[42rem] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
         style={{
           background: "radial-gradient(circle, rgba(21,159,218,0.5), transparent 65%)",
           transform: `translate3d(calc(-50% + ${mouse.x * 22}px), ${mouse.y * 18}px, 0)`,
@@ -92,13 +92,21 @@ export default function Hero() {
             across Jamaica.
           </motion.p>
 
-          <motion.div variants={item} className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <motion.div variants={item} className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center sm:flex-wrap">
             <Button href="#quiz" variant="primary" size="lg" icon={<ArrowRight className="h-4 w-4" />}>
               Take the free quiz
             </Button>
             <Button href="#portfolio" variant="outlineLight" size="lg">
               See our work
             </Button>
+            <motion.div
+              animate={reduce ? undefined : { y: [0, -6, 0] }}
+              transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <Button href="#" variant="light" size="lg" icon={<ShoppingBag className="h-4 w-4" />}>
+                Shop now
+              </Button>
+            </motion.div>
           </motion.div>
 
           <motion.ul

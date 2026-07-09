@@ -54,7 +54,7 @@ export default function Navbar() {
           </Button>
           <button
             onClick={() => setOpen(true)}
-            className="grid h-10 w-10 place-items-center rounded-lg text-sand lg:hidden"
+            className="grid h-11 w-11 place-items-center rounded-lg text-sand lg:hidden"
             aria-label="Open menu"
           >
             <Menu className="h-6 w-6" />
@@ -75,7 +75,7 @@ export default function Navbar() {
               <Logo onClick={() => setOpen(false)} />
               <button
                 onClick={() => setOpen(false)}
-                className="grid h-10 w-10 place-items-center rounded-lg text-sand"
+                className="grid h-11 w-11 place-items-center rounded-lg text-sand"
                 aria-label="Close menu"
               >
                 <X className="h-6 w-6" />
