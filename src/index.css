@@ -1,0 +1,145 @@
+/* Fonts first — self-hosted variable faces */
+@import "@fontsource-variable/fraunces";
+@import "@fontsource-variable/inter";
+
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ *
+ * DESIGN TOKENS — Exotic Aquascape
+ * Palette sampled from the brand's own medium: water + planted greens + koi.
+ * Edit here to re-tune the whole site.
+ * ------------------------------------------------------------------ */
+@theme {
+  /* Type */
+  --font-display: "Fraunces Variable", ui-serif, Georgia, "Times New Roman", serif;
+  --font-body: "Inter Variable", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* Brand palette */
+  --color-deep-water: #06302b; /* near-black teal — dark section base */
+  --color-emerald: #1b7a5a;    /* primary brand green */
+  --color-lagoon: #3fb8af;     /* highlights, links, motion */
+  --color-koi: #e8743b;        /* THE warm accent — CTAs only */
+  --color-sand: #eae3d5;       /* light section backgrounds */
+  --color-ink: #0e1a18;        /* body text */
+
+  /* Derived shades */
+  --color-deep-water-800: #0a3d36;
+  --color-deep-water-700: #0e4a41;
+  --color-emerald-600: #1f8a66;
+  --color-emerald-300: #7cc4a9;
+  --color-lagoon-300: #8fd8d2;
+  --color-koi-600: #d5602a;
+  --color-koi-300: #f0a482;
+  --color-sand-50: #f6f2ea;
+  --color-sand-200: #ded6c3;
+  --color-ink-600: #33443f;
+  --color-ink-400: #5c6b66;
+
+  /* Motion */
+  --ease-water: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Ambient keyframes */
+  --animate-caustics: caustics 24s ease-in-out infinite alternate;
+  --animate-rise: rise 14s linear infinite;
+  --animate-sway: sway 9s ease-in-out infinite alternate;
+  --animate-shimmer: shimmer 8s linear infinite;
+}
+
+@keyframes caustics {
+  0%   { transform: translate3d(-4%, -2%, 0) scale(1.08); opacity: 0.5; }
+  50%  { opacity: 0.85; }
+  100% { transform: translate3d(4%, 3%, 0) scale(1.16); opacity: 0.6; }
+}
+@keyframes rise {
+  0%   { transform: translateY(0) translateX(0); opacity: 0; }
+  10%  { opacity: var(--bubble-opacity, 0.5); }
+  90%  { opacity: var(--bubble-opacity, 0.5); }
+  100% { transform: translateY(-110vh) translateX(var(--bubble-drift, 16px)); opacity: 0; }
+}
+@keyframes sway {
+  from { transform: rotate(-2.5deg); }
+  to   { transform: rotate(2.5deg); }
+}
+@keyframes shimmer {
+  0%   { background-position: -160% 0; }
+  100% { background-position: 260% 0; }
+}
+
+/* ------------------------------------------------------------------ *
+ * Base
+ * ------------------------------------------------------------------ */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-sand);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background-color: var(--color-koi);
+    color: white;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-lagoon);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Lenis smooth-scroll base */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-stopped {
+    overflow: clip;
+  }
+}
+
+/* Utility: fine grain overlay for depth */
+@utility grain {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
