@@ -1,10 +1,12 @@
 import { Camera } from "lucide-react";
 import { cn } from "../../lib/cn";
+import { OPTIMIZED_PHOTOS } from "../../lib/optimizedImages";
 
 /**
  * Watery gradient stand-in for real project photography.
- * When a real image `src` exists it renders that instead.
- * TODO: drop real photos in /public/images and pass `src`.
+ * When a real image `src` exists it renders that instead — real photos
+ * (src/assets/images/**\/*.jpg) automatically get a responsive WebP
+ * srcSet via vite-imagetools; anything else (SVGs) renders as a plain img.
  */
 const GRADIENTS = [
   "linear-gradient(150deg, #123245 0%, #2fa84f 55%, #159fda 120%)",
@@ -31,9 +33,12 @@ export default function Placeholder({
   rounded = "rounded-2xl",
 }: Props) {
   if (src) {
+    const optimized = OPTIMIZED_PHOTOS[src];
     return (
       <img
-        src={src}
+        src={optimized?.src ?? src}
+        srcSet={optimized?.srcSet}
+        sizes={optimized?.sizes}
         alt={alt}
         loading="lazy"
         decoding="async"

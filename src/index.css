@@ -1,4 +1,6 @@
-/* Fonts first — self-hosted variable faces */
+/* Fonts first — self-hosted variable faces. Each @font-face below declares its own
+   unicode-range, so browsers only fetch the subset actually needed for rendered
+   glyphs (e.g. Vietnamese/Cyrillic files never download for this English-only site) */
 @import "@fontsource-variable/fraunces";
 @import "@fontsource-variable/inter";
 
