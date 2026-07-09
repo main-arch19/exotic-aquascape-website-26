@@ -27,8 +27,8 @@ export const BRAND = {
   facebook: "#", // TODO: real Facebook URL
 
   // Currency for all displayed prices. TODO: confirm JMD vs USD.
-  currency: "USD",
-  currencySymbol: "$",
+  currency: "JMD",
+  currencySymbol: "JMD ",
 } as const;
 
 export const NAV_LINKS = [
@@ -64,7 +64,7 @@ export const SERVICES: Service[] = [
     eyebrow: "Self-sustaining ecosystems",
     description:
       "Crystal-clear, low-maintenance ecosystem ponds where koi thrive and the water balances itself. The centrepiece your garden has been missing.",
-    priceFrom: "9,995", // TODO
+    priceFrom: "", // TODO: confirm figures
     icon: "fish",
     features: ["Balanced ecosystem", "Crystal-clear water", "Healthy koi & fish", "Low upkeep"],
     galleryFilter: "koi-ponds",

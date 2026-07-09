@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, ChevronLeft } from "lucide-react";
 import { QUIZ_STEPS, recommendService } from "../data";
@@ -32,6 +32,21 @@ export default function Quiz() {
   const goPrev = () => {
     if (step > 0) setStep(step - 1);
   };
+
+  // Auto-advance to next step when answer is selected, or submit on last step
+  useEffect(() => {
+    if (!answers[currentStep.key]) return; // Only proceed if answer was just set
+
+    if (isLastStep) {
+      // On last step, auto-submit after brief delay
+      const timer = setTimeout(() => handleSubmit(), 600);
+      return () => clearTimeout(timer);
+    } else {
+      // On other steps, auto-advance after brief delay
+      const timer = setTimeout(() => goNext(), 500);
+      return () => clearTimeout(timer);
+    }
+  }, [answers[currentStep.key]]);
 
   const handleSubmit = async () => {
     if (!allAnswered) return;
@@ -212,14 +227,9 @@ export default function Quiz() {
             <span className="text-xs text-ink-400">
               {step + 1} / {QUIZ_STEPS.length}
             </span>
-            <button
-              onClick={isLastStep ? handleSubmit : goNext}
-              disabled={!answers[currentStep.key] || (isLastStep && loading)}
-              className="inline-flex items-center gap-2 rounded-full bg-koi px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-koi-600 hover:-translate-y-0.5 disabled:opacity-50 disabled:pointer-events-none"
-            >
-              {loading ? "Sending..." : isLastStep ? "See my recommendation" : "Next"}{" "}
-              <ArrowRight className="h-4 w-4" />
-            </button>
+            {loading && (
+              <span className="text-sm font-medium text-koi">Sending...</span>
+            )}
           </div>
         </div>
       </div>
