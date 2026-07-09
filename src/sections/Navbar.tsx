@@ -28,8 +28,8 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        "transition-all duration-500",
-        scrolled ? "bg-deep-water/85 backdrop-blur-md border-b border-sand/10 shadow-lg shadow-deep-water/20" : "bg-transparent",
+        "transition-all duration-500 bg-deep-water/50 backdrop-blur-sm",
+        scrolled ? "bg-deep-water/85 backdrop-blur-md border-b border-sand/10 shadow-lg shadow-deep-water/20" : "",
       )}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
@@ -66,7 +66,7 @@ export default function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="fixed inset-0 z-[70] bg-deep-water lg:hidden"
+            className="fixed inset-0 z-[70] bg-deep-water/95 backdrop-blur-sm lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
