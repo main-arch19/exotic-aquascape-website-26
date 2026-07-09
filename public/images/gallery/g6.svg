@@ -1,0 +1,35 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g6-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e1d2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#b3a89a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="g6-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#159fda;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#0b2430;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g6-bg)"/>
+  <!-- Garden landscape -->
+  <path d="M 0 150 Q 50 100 100 120 Q 150 140 200 110 Q 250 80 300 130 Q 350 180 400 150 L 400 300 L 0 300 Z" fill="#2fa84f" opacity="0.5"/>
+  <!-- Central pond -->
+  <ellipse cx="200" cy="180" rx="95" ry="55" fill="url(#g6-water)"/>
+  <!-- Lily pads -->
+  <circle cx="140" cy="170" r="20" fill="#2fa84f" opacity="0.6"/>
+  <circle cx="270" cy="185" r="18" fill="#2fa84f" opacity="0.6"/>
+  <!-- Plantings around pond -->
+  <g transform="translate(100, 140)">
+    <path d="M 0 20 Q -8 8 -10 -8" stroke="#2fa84f" stroke-width="2.5" fill="none"/>
+    <path d="M 0 20 Q 8 8 10 -8" stroke="#2fa84f" stroke-width="2.5" fill="none"/>
+  </g>
+  <g transform="translate(300, 150)">
+    <path d="M 0 20 Q -10 5 -12 -10" stroke="#2fa84f" stroke-width="2.5" fill="none"/>
+    <path d="M 0 20 Q 10 5 12 -10" stroke="#2fa84f" stroke-width="2.5" fill="none"/>
+  </g>
+  <!-- Koi -->
+  <g transform="translate(180, 185)" opacity="0.7">
+    <ellipse cx="0" cy="0" rx="18" ry="11" fill="#16191b"/>
+    <path d="M 18 -7 L 32 -11 L 28 0 L 32 11 L 18 7" fill="#16191b"/>
+    <circle cx="-9" cy="-6" r="2" fill="#f0c400"/>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wg-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e1d2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d0c7b8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="wg-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8fd4ef;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#0b2430;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#wg-sky)"/>
+  <!-- Terraced levels -->
+  <path d="M 50 120 L 200 80 L 350 120" fill="#6b7275" opacity="0.6"/>
+  <path d="M 50 120 L 150 150 L 350 120" fill="url(#wg-water)" opacity="0.8"/>
+  <!-- Waterfall -->
+  <path d="M 200 80 Q 190 100 200 130" stroke="#159fda" stroke-width="8" fill="none" opacity="0.7"/>
+  <path d="M 200 130 Q 195 140 200 150" stroke="#159fda" stroke-width="6" fill="none" opacity="0.6"/>
+  <!-- Plants -->
+  <g transform="translate(100, 100)">
+    <path d="M 0 20 Q -8 5 -10 -10" stroke="#2fa84f" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 0 20 Q 8 5 10 -10" stroke="#2fa84f" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-10" cy="-12" rx="4" ry="6" fill="#2fa84f"/>
+    <ellipse cx="10" cy="-12" rx="4" ry="6" fill="#2fa84f"/>
+  </g>
+  <g transform="translate(300, 105)">
+    <path d="M 0 15 Q -6 3 -8 -8" stroke="#2fa84f" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 0 15 Q 6 3 8 -8" stroke="#2fa84f" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Water surface detail -->
+  <circle cx="150" cy="145" r="8" fill="#f5f1e8" opacity="0.3"/>
+  <circle cx="280" cy="140" r="6" fill="#f5f1e8" opacity="0.2"/>
+</svg>

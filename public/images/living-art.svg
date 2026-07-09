@@ -1,0 +1,60 @@
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="la-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e1d2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d0c7b8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="la-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#b3e8f7;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#0b2430;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="la-glow" cx="40%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#f0c400;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#f0c400;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="500" height="400" fill="url(#la-bg)"/>
+  <!-- Large showcase tank with frame -->
+  <rect x="80" y="60" width="340" height="280" fill="url(#la-water)" stroke="#4a4a4a" stroke-width="4" rx="3"/>
+  <!-- Glass shine -->
+  <rect x="80" y="60" width="340" height="20" fill="#f5f1e8" opacity="0.2" rx="2"/>
+  <!-- Lighting glow -->
+  <ellipse cx="250" cy="100" rx="120" ry="80" fill="url(#la-glow)"/>
+  <!-- Substrate layers -->
+  <rect x="80" y="300" width="340" height="40" fill="#3c4245" opacity="0.7"/>
+  <rect x="80" y="310" width="340" height="10" fill="#6b7275" opacity="0.5"/>
+  <!-- Featured plant groups -->
+  <g transform="translate(140, 280)">
+    <line x1="0" y1="0" x2="0" y2="-120" stroke="#2fa84f" stroke-width="3"/>
+    <ellipse cx="-10" cy="-80" rx="8" ry="14" fill="#2fa84f"/>
+    <ellipse cx="10" cy="-90" rx="8" ry="14" fill="#2fa84f"/>
+    <ellipse cx="-8" cy="-40" rx="7" ry="12" fill="#8fd4a3"/>
+    <ellipse cx="8" cy="-50" rx="7" ry="12" fill="#8fd4a3"/>
+    <ellipse cx="-12" cy="-10" rx="6" ry="10" fill="#2fa84f" opacity="0.7"/>
+  </g>
+  <g transform="translate(360, 290)">
+    <line x1="0" y1="0" x2="0" y2="-110" stroke="#2fa84f" stroke-width="2"/>
+    <ellipse cx="-7" cy="-70" rx="6" ry="12" fill="#2fa84f"/>
+    <ellipse cx="7" cy="-60" rx="6" ry="12" fill="#2fa84f"/>
+    <ellipse cx="-6" cy="-30" rx="5" ry="10" fill="#8fd4a3"/>
+  </g>
+  <!-- Driftwood -->
+  <ellipse cx="200" cy="260" rx="50" ry="25" fill="#3c4245" opacity="0.8" transform="rotate(-15 200 260)"/>
+  <!-- Moss on driftwood -->
+  <path d="M 160 260 Q 155 250 165 245" stroke="#24893f" stroke-width="2" fill="none" opacity="0.8"/>
+  <!-- Fish -->
+  <g transform="translate(200, 160)">
+    <ellipse cx="0" cy="0" rx="18" ry="12" fill="#16191b"/>
+    <path d="M 18 -7 L 35 -11 L 30 0 L 35 11 L 18 7" fill="#16191b"/>
+    <circle cx="-9" cy="-6" r="2.5" fill="#f0c400"/>
+  </g>
+  <g transform="translate(280, 200)" opacity="0.6">
+    <ellipse cx="0" cy="0" rx="14" ry="10" fill="#16191b"/>
+    <path d="M 14 -6 L 28 -9 L 25 0 L 28 9 L 14 6" fill="#16191b"/>
+    <circle cx="-7" cy="-5" r="2" fill="#f0c400"/>
+  </g>
+  <!-- Bubbles -->
+  <circle cx="120" cy="140" r="5" fill="#159fda" opacity="0.4"/>
+  <circle cx="380" cy="180" r="4" fill="#159fda" opacity="0.3"/>
+  <circle cx="250" cy="220" r="3" fill="#159fda" opacity="0.35"/>
+</svg>

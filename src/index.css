@@ -14,26 +14,30 @@
   --font-display: "Fraunces Variable", ui-serif, Georgia, "Times New Roman", serif;
   --font-body: "Inter Variable", ui-sans-serif, system-ui, -apple-system, sans-serif;
 
-  /* Brand palette */
-  --color-deep-water: #06302b; /* near-black teal — dark section base */
-  --color-emerald: #1b7a5a;    /* primary brand green */
-  --color-lagoon: #3fb8af;     /* highlights, links, motion */
-  --color-koi: #e8743b;        /* THE warm accent — CTAs only */
-  --color-sand: #eae3d5;       /* light section backgrounds */
-  --color-ink: #0e1a18;        /* body text */
+  /* Brand palette — extracted from logo.jpeg */
+  --color-deep-water: #0b2430; /* deep navy-black — dark section base */
+  --color-emerald: #2fa84f;    /* bright leaf green from logo */
+  --color-lagoon: #159fda;     /* water blue from logo */
+  --color-koi: #e12f44;        /* crimson from flower petals — CTAs only */
+  --color-sand: #f5f1e8;       /* soft warm off-white */
+  --color-ink: #16191b;        /* near-black body text */
 
   /* Derived shades */
-  --color-deep-water-800: #0a3d36;
-  --color-deep-water-700: #0e4a41;
-  --color-emerald-600: #1f8a66;
-  --color-emerald-300: #7cc4a9;
-  --color-lagoon-300: #8fd8d2;
-  --color-koi-600: #d5602a;
-  --color-koi-300: #f0a482;
-  --color-sand-50: #f6f2ea;
-  --color-sand-200: #ded6c3;
-  --color-ink-600: #33443f;
-  --color-ink-400: #5c6b66;
+  --color-deep-water-800: #123245;
+  --color-deep-water-700: #1a4560;
+  --color-emerald-600: #24893f;
+  --color-emerald-300: #8fd4a3;
+  --color-lagoon-300: #8fd4ef;
+  --color-koi-600: #c11f35;
+  --color-koi-300: #f2909d;
+  --color-sand-50: #faf8f3;
+  --color-sand-200: #e8e1d2;
+  --color-ink-600: #3c4245;
+  --color-ink-400: #6b7275;
+
+  /* Tertiary accents — violet & yellow from logo, rare use only */
+  --color-bloom: #7b3fa6;      /* violet for rare accents */
+  --color-sunbeam: #f0c400;    /* golden yellow for rare highlights */
 
   /* Motion */
   --ease-water: cubic-bezier(0.22, 1, 0.36, 1);

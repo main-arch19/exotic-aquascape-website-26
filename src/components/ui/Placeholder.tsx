@@ -7,10 +7,10 @@ import { cn } from "../../lib/cn";
  * TODO: drop real photos in /public/images and pass `src`.
  */
 const GRADIENTS = [
-  "linear-gradient(150deg, #0a3d36 0%, #1b7a5a 55%, #3fb8af 120%)",
-  "linear-gradient(160deg, #06302b 0%, #0e4a41 60%, #1f8a66 120%)",
-  "linear-gradient(140deg, #0e4a41 0%, #3fb8af 90%, #8fd8d2 130%)",
-  "linear-gradient(155deg, #06302b 0%, #1b7a5a 70%, #7cc4a9 130%)",
+  "linear-gradient(150deg, #123245 0%, #2fa84f 55%, #159fda 120%)",
+  "linear-gradient(160deg, #0b2430 0%, #1a4560 60%, #24893f 120%)",
+  "linear-gradient(140deg, #1a4560 0%, #159fda 90%, #8fd4ef 130%)",
+  "linear-gradient(155deg, #0b2430 0%, #2fa84f 70%, #8fd4a3 130%)",
 ];
 
 type Props = {
@@ -54,7 +54,7 @@ export default function Placeholder({
         className="pointer-events-none absolute inset-0 opacity-40 mix-blend-screen animate-caustics"
         style={{
           background:
-            "radial-gradient(60% 45% at 30% 20%, rgba(143,216,210,0.55), transparent 60%), radial-gradient(50% 40% at 75% 70%, rgba(63,184,175,0.45), transparent 60%)",
+            "radial-gradient(60% 45% at 30% 20%, rgba(143,212,239,0.55), transparent 60%), radial-gradient(50% 40% at 75% 70%, rgba(21,159,218,0.45), transparent 60%)",
         }}
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-sand/70">

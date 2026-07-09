@@ -36,7 +36,7 @@ export default function Bubbles({ count = 18 }: { count?: number }) {
               width: b.size,
               height: b.size,
               background:
-                "radial-gradient(circle at 32% 28%, rgba(255,255,255,0.9), rgba(143,216,210,0.35) 45%, rgba(63,184,175,0.05) 70%)",
+                "radial-gradient(circle at 32% 28%, rgba(255,255,255,0.9), rgba(143,212,239,0.35) 45%, rgba(21,159,218,0.05) 70%)",
               boxShadow: "inset 0 0 4px rgba(255,255,255,0.4)",
               animationDuration: `${b.duration}s`,
               animationDelay: `${b.delay}s`,

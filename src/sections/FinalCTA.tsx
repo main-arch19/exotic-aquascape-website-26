@@ -14,7 +14,7 @@ export default function FinalCTA() {
         transition={{ duration: 20, repeat: Infinity, repeatType: "reverse" }}
         style={{
           background:
-            "radial-gradient(120% 100% at 50% 50%, rgba(63,184,175,0.2), transparent 60%)",
+            "radial-gradient(120% 100% at 50% 50%, rgba(21,159,218,0.2), transparent 60%)",
           backgroundSize: "200% 200%",
         }}
       />

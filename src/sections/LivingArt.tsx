@@ -45,7 +45,7 @@ export default function LivingArt() {
             </div>
           </Reveal>
           <Reveal delay={0.15} className="aspect-[4/3] lg:aspect-auto">
-            <Placeholder label="Living Art Aquarium" seed={3} className="h-full rounded-2xl" />
+            <Placeholder src="/images/living-art.svg" alt="Living Art Aquarium" label="Living Art Aquarium" seed={3} className="h-full rounded-2xl" />
           </Reveal>
         </div>
       </div>

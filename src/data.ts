@@ -54,6 +54,7 @@ export type Service = {
   icon: "fish" | "droplets" | "flower" | "sparkles";
   features: string[];
   galleryFilter: GalleryCategory;
+  image: string; // SVG path
 };
 
 export const SERVICES: Service[] = [
@@ -67,6 +68,7 @@ export const SERVICES: Service[] = [
     icon: "fish",
     features: ["Balanced ecosystem", "Crystal-clear water", "Healthy koi & fish", "Low upkeep"],
     galleryFilter: "koi-ponds",
+    image: "/images/services/koi-ponds.svg",
   },
   {
     id: "fountains",
@@ -78,6 +80,7 @@ export const SERVICES: Service[] = [
     icon: "droplets",
     features: ["Compact footprint", "Family-safe (no standing water)", "Quick install", "Minimal upkeep"],
     galleryFilter: "fountains",
+    image: "/images/services/fountains.svg",
   },
   {
     id: "water-gardens",
@@ -89,6 +92,7 @@ export const SERVICES: Service[] = [
     icon: "flower",
     features: ["Aquatic plantings", "Streams & waterfalls", "Attracts wildlife", "Year-round colour"],
     galleryFilter: "water-gardens",
+    image: "/images/services/water-gardens.svg",
   },
   {
     id: "living-art-aquariums",
@@ -100,6 +104,7 @@ export const SERVICES: Service[] = [
     icon: "sparkles",
     features: ["Bespoke aquascape design", "Indoor centrepiece", "For homes & hospitality", "Full maintenance option"],
     galleryFilter: "aquariums",
+    image: "/images/services/aquariums.svg",
   },
 ];
 
@@ -335,17 +340,17 @@ export type GalleryItem = {
   tall?: boolean;
 };
 
-// Placeholder set — replace with real project photography.
+// SVG illustration set — customized for brand, replaceable with real photography.
 export const GALLERY: GalleryItem[] = [
-  { id: "g1", category: "koi-ponds", title: "Hillside Koi Pond", location: "St. Andrew", tall: true, beforeSrc: "", afterSrc: "" },
-  { id: "g2", category: "fountains", title: "Courtyard Basalt Fountain", location: "Kingston" },
-  { id: "g3", category: "water-gardens", title: "Terraced Water Garden", location: "Manchester" },
-  { id: "g4", category: "aquariums", title: "Living-Art Aquarium", location: "Montego Bay", tall: true },
-  { id: "g5", category: "commercial", title: "Resort Lobby Feature", location: "St. James" },
-  { id: "g6", category: "koi-ponds", title: "Garden Ecosystem Pond", location: "St. Catherine" },
-  { id: "g7", category: "water-gardens", title: "Stream & Waterfall", location: "Portland", tall: true },
-  { id: "g8", category: "fountains", title: "Entrance Urn Fountain", location: "St. Ann" },
-  { id: "g9", category: "commercial", title: "Hotel Grounds Pondscape", location: "Trelawny" },
+  { id: "g1", category: "koi-ponds", title: "Hillside Koi Pond", location: "St. Andrew", tall: true, beforeSrc: "/images/gallery/g1-before.svg", afterSrc: "/images/gallery/g1-after.svg" },
+  { id: "g2", category: "fountains", title: "Courtyard Basalt Fountain", location: "Kingston", src: "/images/gallery/g2.svg" },
+  { id: "g3", category: "water-gardens", title: "Terraced Water Garden", location: "Manchester", src: "/images/gallery/g3.svg" },
+  { id: "g4", category: "aquariums", title: "Living-Art Aquarium", location: "Montego Bay", tall: true, src: "/images/gallery/g4.svg" },
+  { id: "g5", category: "commercial", title: "Resort Lobby Feature", location: "St. James", src: "/images/gallery/g5.svg" },
+  { id: "g6", category: "koi-ponds", title: "Garden Ecosystem Pond", location: "St. Catherine", src: "/images/gallery/g6.svg" },
+  { id: "g7", category: "water-gardens", title: "Stream & Waterfall", location: "Portland", tall: true, src: "/images/gallery/g7.svg" },
+  { id: "g8", category: "fountains", title: "Entrance Urn Fountain", location: "St. Ann", src: "/images/gallery/g8.svg" },
+  { id: "g9", category: "commercial", title: "Hotel Grounds Pondscape", location: "Trelawny", src: "/images/gallery/g9.svg" },
 ];
 
 /* ------------------------------------------------------------------ */

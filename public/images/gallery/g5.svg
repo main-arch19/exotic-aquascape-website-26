@@ -1,0 +1,43 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g5-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e1d2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d0c7b8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="g5-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#159fda;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#0b2430;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g5-bg)"/>
+  <!-- Lobby feature - large central pond -->
+  <ellipse cx="200" cy="180" rx="140" ry="80" fill="url(#g5-water)" stroke="#4a4a4a" stroke-width="2"/>
+  <!-- Decorative edge -->
+  <ellipse cx="200" cy="180" rx="140" ry="80" fill="none" stroke="#f5f1e8" stroke-width="1" opacity="0.4" stroke-dasharray="2,3"/>
+  <!-- Central stone feature -->
+  <circle cx="200" cy="140" r="35" fill="#6b7275" opacity="0.8"/>
+  <!-- Waterfall from central stone -->
+  <path d="M 200 175 Q 195 190 200 220" stroke="#159fda" stroke-width="5" fill="none" opacity="0.7"/>
+  <!-- Large aquatic plants -->
+  <g transform="translate(100, 160)">
+    <line x1="0" y1="0" x2="0" y2="-80" stroke="#2fa84f" stroke-width="3"/>
+    <ellipse cx="-12" cy="-45" rx="8" ry="14" fill="#2fa84f"/>
+    <ellipse cx="12" cy="-55" rx="8" ry="14" fill="#2fa84f"/>
+  </g>
+  <g transform="translate(300, 170)">
+    <line x1="0" y1="0" x2="0" y2="-75" stroke="#2fa84f" stroke-width="3"/>
+    <ellipse cx="-10" cy="-45" rx="7" ry="13" fill="#2fa84f"/>
+    <ellipse cx="10" cy="-40" rx="7" ry="13" fill="#2fa84f"/>
+  </g>
+  <!-- Koi schools -->
+  <g transform="translate(150, 180)" opacity="0.8">
+    <ellipse cx="0" cy="0" rx="16" ry="10" fill="#16191b"/>
+    <path d="M 16 -6 L 30 -9 L 27 0 L 30 9 L 16 6" fill="#16191b"/>
+    <circle cx="-8" cy="-6" r="2" fill="#f0c400"/>
+  </g>
+  <g transform="translate(260, 195)" opacity="0.6">
+    <ellipse cx="0" cy="0" rx="14" ry="9" fill="#16191b"/>
+    <path d="M 14 -5 L 26 -8 L 23 0 L 26 8 L 14 5" fill="#16191b"/>
+    <circle cx="-7" cy="-5" r="1.5" fill="#f0c400"/>
+  </g>
+</svg>

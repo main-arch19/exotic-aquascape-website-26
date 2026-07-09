@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="b-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b8a8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#a89c8c;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="350" fill="url(#b-sky)"/>
+  <!-- Bare earth hillside - before state -->
+  <path d="M 0 200 Q 100 120 200 140 Q 300 160 400 200 L 400 350 L 0 350 Z" fill="#6b6b6b" opacity="0.7"/>
+  <path d="M 0 220 Q 100 160 200 180 Q 300 200 400 240 L 400 350 L 0 350 Z" fill="#8b8b8b" opacity="0.5"/>
+  <!-- A few struggling grass patches (muted) -->
+  <line x1="80" y1="220" x2="75" y2="205" stroke="#7a9c5e" stroke-width="1" opacity="0.4"/>
+  <line x1="320" y1="260" x2="318" y2="240" stroke="#7a9c5e" stroke-width="1" opacity="0.3"/>
+  <!-- No water feature - empty space where pond would be -->
+  <ellipse cx="200" cy="200" rx="80" ry="40" fill="#9b9b9b" opacity="0.6" stroke="#7b7b7b" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- Text label -->
+  <text x="200" y="320" font-family="Arial" font-size="14" fill="#6b7275" text-anchor="middle" opacity="0.6">Before Installation</text>
+</svg>

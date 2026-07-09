@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g2-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e1d2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d0c7b8;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="g2-stone" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#8b8b8b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4a4a4a;stop-opacity:1"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g2-bg)"/>
+  <!-- Paved courtyard -->
+  <rect x="60" y="80" width="280" height="200" fill="#b3b3b3" opacity="0.5"/>
+  <!-- Basalt stones stacked -->
+  <ellipse cx="200" cy="150" rx="45" ry="55" fill="url(#g2-stone)"/>
+  <!-- Water cascading -->
+  <path d="M 170 95 Q 165 120 170 145" stroke="#159fda" stroke-width="4" fill="none" opacity="0.8"/>
+  <path d="M 200 95 Q 195 115 200 145" stroke="#159fda" stroke-width="4" fill="none" opacity="0.8"/>
+  <path d="M 230 95 Q 235 125 230 145" stroke="#159fda" stroke-width="4" fill="none" opacity="0.8"/>
+  <!-- Basin at base -->
+  <ellipse cx="200" cy="220" rx="70" ry="35" fill="#159fda" opacity="0.6"/>
+  <!-- Water splashes -->
+  <circle cx="150" cy="210" r="5" fill="#159fda" opacity="0.5"/>
+  <circle cx="250" cy="215" r="4" fill="#159fda" opacity="0.4"/>
+</svg>

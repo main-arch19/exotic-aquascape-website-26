@@ -1,0 +1,45 @@
+<svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="a-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e1d2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c4b8a8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="a-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#159fda;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#0b2430;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="350" fill="url(#a-sky)"/>
+  <!-- Terraced hillside with landscaping -->
+  <path d="M 0 200 Q 80 140 150 160 L 180 190 Q 220 210 250 180 Q 300 150 400 180 L 400 350 L 0 350 Z" fill="#8b8b8b" opacity="0.6"/>
+  <!-- Planted areas (green) -->
+  <path d="M 0 200 Q 80 140 150 160 L 180 190 Q 100 150 0 220 Z" fill="#2fa84f" opacity="0.6"/>
+  <path d="M 250 180 Q 300 150 400 180 L 400 220 Q 350 180 250 200 Z" fill="#2fa84f" opacity="0.6"/>
+  <!-- Central koi pond -->
+  <ellipse cx="200" cy="210" rx="90" ry="50" fill="url(#a-water)"/>
+  <!-- Pond edge with rocks -->
+  <circle cx="140" cy="190" r="12" fill="#6b7275" opacity="0.8"/>
+  <circle cx="280" cy="210" r="14" fill="#6b7275" opacity="0.8"/>
+  <circle cx="200" cy="270" r="10" fill="#6b7275" opacity="0.7"/>
+  <!-- Water plants around edge -->
+  <g transform="translate(120, 170)">
+    <path d="M 0 20 Q -8 5 -10 -10" stroke="#2fa84f" stroke-width="2" fill="none"/>
+    <ellipse cx="-10" cy="-12" rx="3" ry="5" fill="#2fa84f"/>
+  </g>
+  <g transform="translate(280, 180)">
+    <path d="M 0 20 Q 8 5 10 -10" stroke="#2fa84f" stroke-width="2" fill="none"/>
+    <ellipse cx="10" cy="-12" rx="3" ry="5" fill="#2fa84f"/>
+  </g>
+  <!-- Koi in pond -->
+  <g transform="translate(170, 210)" opacity="0.7">
+    <ellipse cx="0" cy="0" rx="20" ry="12" fill="#16191b"/>
+    <path d="M 20 -8 L 35 -12 L 30 0 L 35 12 L 20 8" fill="#16191b"/>
+    <circle cx="-10" cy="-7" r="2" fill="#f0c400"/>
+  </g>
+  <!-- Waterfall stones -->
+  <rect x="250" y="130" width="8" height="60" fill="#6b7275" opacity="0.8" transform="rotate(-15 254 160)"/>
+  <!-- Lily pads -->
+  <circle cx="150" cy="220" r="15" fill="#2fa84f" opacity="0.5"/>
+  <!-- Text label -->
+  <text x="200" y="320" font-family="Arial" font-size="14" fill="#16191b" text-anchor="middle" opacity="0.7">After Installation</text>
+</svg>

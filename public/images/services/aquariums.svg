@@ -1,0 +1,41 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aq-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e1d2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d0c7b8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="aq-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8fd4ef;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#0b2430;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#aq-bg)"/>
+  <!-- Glass tank -->
+  <rect x="80" y="50" width="240" height="200" fill="url(#aq-water)" stroke="#6b7275" stroke-width="3"/>
+  <!-- Glass reflection -->
+  <line x1="80" y1="50" x2="320" y2="50" stroke="#f5f1e8" stroke-width="2" opacity="0.3"/>
+  <!-- Substrate -->
+  <rect x="80" y="220" width="240" height="30" fill="#3c4245" opacity="0.6"/>
+  <!-- Planted stems -->
+  <g transform="translate(120, 180)">
+    <line x1="0" y1="0" x2="0" y2="-80" stroke="#2fa84f" stroke-width="2"/>
+    <ellipse cx="-8" cy="-50" rx="6" ry="10" fill="#2fa84f"/>
+    <ellipse cx="8" cy="-60" rx="6" ry="10" fill="#2fa84f"/>
+    <ellipse cx="-6" cy="-20" rx="5" ry="8" fill="#2fa84f"/>
+  </g>
+  <g transform="translate(280, 190)">
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#2fa84f" stroke-width="2"/>
+    <ellipse cx="-7" cy="-45" rx="5" ry="9" fill="#2fa84f"/>
+    <ellipse cx="7" cy="-35" rx="5" ry="9" fill="#2fa84f"/>
+  </g>
+  <!-- Driftwood rock -->
+  <ellipse cx="200" cy="210" rx="35" ry="15" fill="#3c4245" opacity="0.7"/>
+  <!-- Fish silhouette -->
+  <g transform="translate(160, 120)">
+    <ellipse cx="0" cy="0" rx="15" ry="10" fill="#16191b"/>
+    <path d="M 15 -5 L 28 -8 L 25 0 L 28 8 L 15 5" fill="#16191b"/>
+    <circle cx="-8" cy="-5" r="2" fill="#f0c400"/>
+  </g>
+  <!-- Bubble -->
+  <circle cx="240" cy="100" r="6" fill="#159fda" opacity="0.5"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g4-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e1d2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d0c7b8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="g4-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#b3e8f7;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#0b2430;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" fill="url(#g4-bg)"/>
+  <!-- Tall tank -->
+  <rect x="50" y="40" width="200" height="340" fill="url(#g4-water)" stroke="#4a4a4a" stroke-width="3" rx="2"/>
+  <!-- Substrate -->
+  <rect x="50" y="340" width="200" height="40" fill="#3c4245" opacity="0.7"/>
+  <!-- Tall plants -->
+  <g transform="translate(90, 360)">
+    <line x1="0" y1="0" x2="0" y2="-180" stroke="#2fa84f" stroke-width="2"/>
+    <ellipse cx="-6" cy="-100" rx="5" ry="10" fill="#2fa84f"/>
+    <ellipse cx="6" cy="-120" rx="5" ry="10" fill="#2fa84f"/>
+    <ellipse cx="-5" cy="-50" rx="4" ry="8" fill="#8fd4a3"/>
+  </g>
+  <g transform="translate(210, 370)">
+    <line x1="0" y1="0" x2="0" y2="-160" stroke="#2fa84f" stroke-width="2"/>
+    <ellipse cx="-5" cy="-90" rx="4" ry="9" fill="#2fa84f"/>
+    <ellipse cx="5" cy="-70" rx="4" ry="9" fill="#2fa84f"/>
+  </g>
+  <!-- Fish -->
+  <g transform="translate(120, 150)">
+    <ellipse cx="0" cy="0" rx="14" ry="9" fill="#16191b"/>
+    <path d="M 14 -5 L 26 -8 L 23 0 L 26 8 L 14 5" fill="#16191b"/>
+    <circle cx="-7" cy="-5" r="2" fill="#f0c400"/>
+  </g>
+  <g transform="translate(180, 230)" opacity="0.6">
+    <ellipse cx="0" cy="0" rx="12" ry="8" fill="#16191b"/>
+    <path d="M 12 -4 L 23 -7 L 20 0 L 23 7 L 12 4" fill="#16191b"/>
+    <circle cx="-6" cy="-4" r="1.5" fill="#f0c400"/>
+  </g>
+  <!-- Bubbles -->
+  <circle cx="260" cy="120" r="4" fill="#159fda" opacity="0.35"/>
+  <circle cx="70" cy="200" r="3" fill="#159fda" opacity="0.3"/>
+</svg>

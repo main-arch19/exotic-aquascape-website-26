@@ -19,7 +19,7 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
   return (
     <Reveal delay={index * 0.08} className="group flex h-full flex-col overflow-hidden rounded-2xl border border-deep-water/10 bg-white/70 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-deep-water/10">
       <div className="relative aspect-[4/3] overflow-hidden">
-        <Placeholder label={service.name} seed={index} rounded="rounded-none" className="transition-transform duration-700 group-hover:scale-105" />
+        <Placeholder src={service.image} alt={service.name} label={service.name} seed={index} rounded="rounded-none" className="transition-transform duration-700 group-hover:scale-105" />
         <span className="absolute left-3 top-3 grid h-10 w-10 place-items-center rounded-xl bg-deep-water/70 text-lagoon backdrop-blur">
           <Icon className="h-5 w-5" />
         </span>

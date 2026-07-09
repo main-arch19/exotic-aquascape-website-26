@@ -34,7 +34,7 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(120% 90% at 20% 0%, #0e4a41 0%, #06302b 55%, #041f1c 100%)",
+            "radial-gradient(120% 90% at 20% 0%, #1a4560 0%, #0b2430 55%, #040d13 100%)",
         }}
       />
 
@@ -61,7 +61,7 @@ export default function Hero() {
       <div
         className="pointer-events-none absolute left-1/2 top-1/4 h-[42rem] w-[42rem] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
         style={{
-          background: "radial-gradient(circle, rgba(63,184,175,0.5), transparent 65%)",
+          background: "radial-gradient(circle, rgba(21,159,218,0.5), transparent 65%)",
           transform: `translate3d(calc(-50% + ${mouse.x * 22}px), ${mouse.y * 18}px, 0)`,
         }}
       />
