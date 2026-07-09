@@ -93,7 +93,7 @@ export default function Navbar() {
                   href={l.href}
                   onClick={() => setOpen(false)}
                   variants={{ hidden: { opacity: 0, x: -16 }, show: { opacity: 1, x: 0 } }}
-                  className="border-b border-sand/10 py-4 font-display text-2xl text-sand"
+                  className="border-b border-sand/10 py-4 px-2 font-display text-2xl text-sand transition-all duration-200 hover:bg-sand/10 hover:text-lagoon active:bg-sand/20 active:text-lagoon"
                 >
                   {l.label}
                 </motion.a>
