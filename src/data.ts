@@ -68,7 +68,7 @@ export const SERVICES: Service[] = [
     icon: "fish",
     features: ["Balanced ecosystem", "Crystal-clear water", "Healthy koi & fish", "Low upkeep"],
     galleryFilter: "koi-ponds",
-    image: "/images/services/koi-ponds.svg",
+    image: "/images/services/koi-ponds-real.jpg",
   },
   {
     id: "fountains",
@@ -347,7 +347,7 @@ export const GALLERY: GalleryItem[] = [
   { id: "g3", category: "water-gardens", title: "Terraced Water Garden", location: "Manchester", src: "/images/gallery/g3.svg" },
   { id: "g4", category: "aquariums", title: "Living-Art Aquarium", location: "Montego Bay", tall: true, src: "/images/gallery/g4.svg" },
   { id: "g5", category: "commercial", title: "Resort Lobby Feature", location: "St. James", src: "/images/gallery/g5-commercial-real.jpg" },
-  { id: "g6", category: "koi-ponds", title: "Garden Ecosystem Pond", location: "St. Catherine", src: "/images/gallery/g6.svg" },
+  { id: "g6", category: "koi-ponds", title: "Garden Ecosystem Pond", location: "St. Catherine", src: "/images/gallery/g6-koi-ponds-real.jpg" },
   { id: "g7", category: "water-gardens", title: "Stream & Waterfall", location: "Portland", tall: true, src: "/images/gallery/g7-water-gardens-real.jpg" },
   { id: "g8", category: "fountains", title: "Entrance Urn Fountain", location: "St. Ann", src: "/images/gallery/g8.svg" },
   { id: "g9", category: "commercial", title: "Hotel Grounds Pondscape", location: "Trelawny", src: "/images/gallery/g9.svg" },
