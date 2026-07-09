@@ -80,7 +80,7 @@ export const SERVICES: Service[] = [
     icon: "droplets",
     features: ["Compact footprint", "Family-safe (no standing water)", "Quick install", "Minimal upkeep"],
     galleryFilter: "fountains",
-    image: "/images/services/fountains.svg",
+    image: "/images/services/fountains-real.jpg",
   },
   {
     id: "water-gardens",
@@ -92,7 +92,7 @@ export const SERVICES: Service[] = [
     icon: "flower",
     features: ["Aquatic plantings", "Streams & waterfalls", "Attracts wildlife", "Year-round colour"],
     galleryFilter: "water-gardens",
-    image: "/images/services/water-gardens.svg",
+    image: "/images/services/water-gardens-real.jpg",
   },
   {
     id: "living-art-aquariums",
@@ -346,9 +346,9 @@ export const GALLERY: GalleryItem[] = [
   { id: "g2", category: "fountains", title: "Courtyard Basalt Fountain", location: "Kingston", src: "/images/gallery/g2.svg" },
   { id: "g3", category: "water-gardens", title: "Terraced Water Garden", location: "Manchester", src: "/images/gallery/g3.svg" },
   { id: "g4", category: "aquariums", title: "Living-Art Aquarium", location: "Montego Bay", tall: true, src: "/images/gallery/g4.svg" },
-  { id: "g5", category: "commercial", title: "Resort Lobby Feature", location: "St. James", src: "/images/gallery/g5.svg" },
+  { id: "g5", category: "commercial", title: "Resort Lobby Feature", location: "St. James", src: "/images/gallery/g5-commercial-real.jpg" },
   { id: "g6", category: "koi-ponds", title: "Garden Ecosystem Pond", location: "St. Catherine", src: "/images/gallery/g6.svg" },
-  { id: "g7", category: "water-gardens", title: "Stream & Waterfall", location: "Portland", tall: true, src: "/images/gallery/g7.svg" },
+  { id: "g7", category: "water-gardens", title: "Stream & Waterfall", location: "Portland", tall: true, src: "/images/gallery/g7-water-gardens-real.jpg" },
   { id: "g8", category: "fountains", title: "Entrance Urn Fountain", location: "St. Ann", src: "/images/gallery/g8.svg" },
   { id: "g9", category: "commercial", title: "Hotel Grounds Pondscape", location: "Trelawny", src: "/images/gallery/g9.svg" },
 ];
