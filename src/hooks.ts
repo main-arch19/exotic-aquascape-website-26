@@ -68,14 +68,28 @@ export function useMousePosition() {
   return reduce ? { x: 0, y: 0 } : pos;
 }
 
-/** Lock body scroll (mobile drawer, lightbox). */
+/** Lock body scroll (mobile drawer, lightbox). iOS-safe: uses position:fixed to prevent rubber-band bounce. */
 export function useBodyScrollLock(locked: boolean) {
   useEffect(() => {
     if (!locked) return;
-    const prev = document.body.style.overflow;
+
+    const scrollY = window.scrollY;
+    const prevPosition = document.body.style.position;
+    const prevTop = document.body.style.top;
+    const prevWidth = document.body.style.width;
+    const prevOverflow = document.body.style.overflow;
+
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = "100%";
     document.body.style.overflow = "hidden";
+
     return () => {
-      document.body.style.overflow = prev;
+      document.body.style.position = prevPosition;
+      document.body.style.top = prevTop;
+      document.body.style.width = prevWidth;
+      document.body.style.overflow = prevOverflow;
+      window.scrollTo(0, scrollY);
     };
   }, [locked]);
 }
