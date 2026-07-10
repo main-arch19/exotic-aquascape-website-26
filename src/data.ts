@@ -104,7 +104,7 @@ export const SERVICES: Service[] = [
     icon: "sparkles",
     features: ["Bespoke aquascape design", "Indoor centrepiece", "For homes & hospitality", "Full maintenance option"],
     galleryFilter: "aquariums",
-    image: "/images/services/aquariums.svg",
+    image: "/images/services/aquariums-real.jpg",
   },
 ];
 
@@ -343,14 +343,14 @@ export type GalleryItem = {
 // SVG illustration set — customized for brand, replaceable with real photography.
 export const GALLERY: GalleryItem[] = [
   { id: "g1", category: "koi-ponds", title: "Hillside Koi Pond", location: "St. Andrew", tall: true, beforeSrc: "/images/gallery/g1-before.svg", afterSrc: "/images/gallery/g1-after.svg" },
-  { id: "g2", category: "fountains", title: "Courtyard Basalt Fountain", location: "Kingston", src: "/images/gallery/g2.svg" },
-  { id: "g3", category: "water-gardens", title: "Terraced Water Garden", location: "Manchester", src: "/images/gallery/g3.svg" },
-  { id: "g4", category: "aquariums", title: "Living-Art Aquarium", location: "Montego Bay", tall: true, src: "/images/gallery/g4.svg" },
+  { id: "g2", category: "fountains", title: "Courtyard Basalt Fountain", location: "Kingston", src: "/images/gallery/g2-fountains-real.jpg" },
+  { id: "g3", category: "water-gardens", title: "Terraced Water Garden", location: "Manchester", src: "/images/gallery/g3-water-gardens-real.jpg" },
+  { id: "g4", category: "aquariums", title: "Living-Art Aquarium", location: "Montego Bay", tall: true, src: "/images/gallery/g4-aquariums-real.jpg" },
   { id: "g5", category: "commercial", title: "Resort Lobby Feature", location: "St. James", src: "/images/gallery/g5-commercial-real.jpg" },
   { id: "g6", category: "koi-ponds", title: "Garden Ecosystem Pond", location: "St. Catherine", src: "/images/gallery/g6-koi-ponds-real.jpg" },
   { id: "g7", category: "water-gardens", title: "Stream & Waterfall", location: "Portland", tall: true, src: "/images/gallery/g7-water-gardens-real.jpg" },
-  { id: "g8", category: "fountains", title: "Entrance Urn Fountain", location: "St. Ann", src: "/images/gallery/g8.svg" },
-  { id: "g9", category: "commercial", title: "Hotel Grounds Pondscape", location: "Trelawny", src: "/images/gallery/g9.svg" },
+  { id: "g8", category: "fountains", title: "Entrance Urn Fountain", location: "St. Ann", src: "/images/gallery/g8-fountains-real.jpg" },
+  { id: "g9", category: "commercial", title: "Hotel Grounds Pondscape", location: "Trelawny", src: "/images/gallery/g9-commercial-real.jpg" },
 ];
 
 /* ------------------------------------------------------------------ */
